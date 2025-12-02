@@ -2,16 +2,26 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "template-website",
-  description: "A VitePress Site",
+  title: "VitePress Template",
+  description: "A template for creating VitePress websites",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Getting Started', link: '/getting-started' },
+      { text: 'Customization', link: '/customization' },
+      { text: 'Deployment', link: '/deployment' }
     ],
 
     sidebar: [
+      {
+        text: 'Guides',
+        items: [
+          { text: 'Getting Started', link: '/getting-started' },
+          { text: 'Customization', link: '/customization' },
+          { text: 'Deployment', link: '/deployment' }
+        ]
+      },
       {
         text: 'Examples',
         items: [
